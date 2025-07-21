@@ -1,5 +1,7 @@
-export const Boton=({evento})=>{
+export const Boton = ({ evento, children }) => {
   return (
-    <button className="border" onClick={evento}>Agregar Producto</button>
-  )
-}
+    <button className="border" onClick={evento}>
+      {children}
+    </button>
+  );
+};
